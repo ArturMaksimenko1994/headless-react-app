@@ -1,0 +1,13 @@
+.container {
+  max-width: 1172px;
+  padding: 0 16px;
+  margin: 0 auto;
+
+  &--xl {
+    max-width: 1232px;
+  }
+
+  &--max-width {
+    max-width: 100%;
+  }
+}
