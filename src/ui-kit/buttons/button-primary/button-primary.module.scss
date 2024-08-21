@@ -1,0 +1,35 @@
+.button {
+  background-color: rgba(52, 86, 243, 1);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  gap: 8px;
+  justify-content: center;
+  line-height: 120%;
+  outline: none;
+  padding: 0 12px;
+  text-decoration: none;
+  max-width: 300px;
+  width: 100%;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: rgba(52, 86, 243, 0.8);
+  }
+
+  &--sm {
+    height: 32px;
+  }
+
+  &--xl {
+    height: 45px;
+  }
+}
+
+.icon {
+  font-size: 12px;
+}

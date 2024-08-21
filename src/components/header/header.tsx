@@ -2,13 +2,15 @@ import styles from "./header.module.scss"
 
 import logoSvg from "./../../assets/img/icons/logo.svg"
 import {Link, NavLink} from "react-router-dom";
+import ButtonPrimary from "../../ui-kit/buttons/button-primary/button-primary";
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <div className="container">
         <div className={styles.row}>
-          <img src={logoSvg} alt="logo"/>
+
+          <img className={styles.logo} src={logoSvg} alt="logo"/>
 
           <nav className={styles.nav}>
             <ul className={styles.list}>
@@ -43,8 +45,18 @@ const Header = () => {
                 </NavLink>
               </li>
             </ul>
-
           </nav>
+
+          <div className={styles.aut}>
+            <Link className={styles.link} to='/register'>Регистрация</Link>
+            <ButtonPrimary
+              link={"login"}
+              icon="&#128104;"
+              iconPosition="left"
+            >
+              Войти
+            </ButtonPrimary>
+          </div>
 
         </div>
       </div>

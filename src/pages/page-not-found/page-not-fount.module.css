@@ -1,4 +1,4 @@
-.page {
+.error {
     position: fixed;
     top: 0;
     left: 0;
@@ -15,17 +15,13 @@
 }
 
 .number {
-    font-size: 72px;
+    font-size: 140px;
 }
 
 .title {
     color: #303A4F;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 700;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .link {
